@@ -3,9 +3,11 @@ import ReactDOM from "react-dom";
 import { Router } from "@reach/router";
 import pf from "petfinder-client";
 import { Provider } from "./SearchContext";
-import Results from "./Results";
-import Details from "./Details";
-import SearchParams from "./SearchParams";
+import Loadable from "react-loadable";
+/* below statements are commmented out becuase these components are loaded using code splitting */
+// import Details from "./Details";
+// import SearchParams from "./SearchParams";
+// import Results from "./Results";
 import NavBar from "./NavBar";
 
 const petfinder = pf({
@@ -13,6 +15,25 @@ const petfinder = pf({
   secret: process.env.API_SECRET
 });
 
+const LoadableDetails = Loadable({
+  loader: () => import("./Details"),
+  loading() {
+    return <div>Loading split code</div>;
+  }
+});
+
+const LoadableSearchParams = Loadable({
+  loader: () => import("./SearchParams"),
+  loading() {
+    return <div>Loading split code</div>;
+  }
+});
+const LoadableResults = Loadable({
+  loader: () => import("./Results"),
+  loading() {
+    return <div>Loading split code</div>;
+  }
+});
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -76,9 +97,9 @@ class App extends React.Component {
         <NavBar />
         <Provider value={this.state}>
           <Router>
-            <Results path="/" />
-            <Details path="/details/:id" />
-            <SearchParams path="/search-params" />
+            <LoadableResults path="/" />
+            <LoadableDetails path="/details/:id" />
+            <LoadableSearchParams path="/search-params" />
           </Router>
         </Provider>
       </div>

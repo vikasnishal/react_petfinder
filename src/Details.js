@@ -2,11 +2,20 @@ import React from "react";
 import pf from "petfinder-client";
 import { navigate } from "@reach/router";
 import Carousel from "./Carousel";
-import Modal from "./Modal";
+import Loadable from "react-loadable";
+/** below statement is commented to implement code splitting */
+// import Modal from "./Modal";
 
 const petfinder = pf({
   key: process.env.API_KEY,
   secret: process.env.API_SECRET
+});
+
+const ModalLoader = Loadable({
+  loader: () => import("./Modal"),
+  loading() {
+    return <div>Loading split code.</div>;
+  }
 });
 
 class Details extends React.Component {
@@ -72,13 +81,13 @@ class Details extends React.Component {
           <button onClick={this.toggleModal}>Adopt {name}</button>
           <p>{description}</p>
           {showModal ? (
-            <Modal>
+            <ModalLoader>
               <h1>Would you like to adopt {name}</h1>
               <div className="buttons">
                 <button onClick={this.toggleModal}>Yes</button>
-                <button onClick={this.toggleModal}>Hell Yes</button>
+                <button onClick={this.toggleModal}>Hell Yes!!</button>
               </div>
-            </Modal>
+            </ModalLoader>
           ) : null}
         </div>
       </div>
