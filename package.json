@@ -1,7 +1,7 @@
 {
   "name": "adopt-me",
   "version": "1.0.0",
-  "description": "An app to teach you to write React",
+  "description": "An app for finding pet written in react",
   "main": "src/App.js",
   "scripts": {
     "test": "",
@@ -11,14 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/btholt/complete-intro-to-react-v4.git"
+    "url": "git+https://github.com/vikasnishal/react_petfinder.git"
   },
   "author": "Brian Holt <btholt@gmail.com>",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/btholt/complete-intro-to-react-v4/issues"
-  },
-  "homepage": "https://github.com/btholt/complete-intro-to-react-v4#readme",
+  "bugs": {},
+  "homepage": "https://github.com/vikasnishal/react_petfinder#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
