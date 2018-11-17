@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react_petfinder/precache-manifest.83c4dc379913290ba2995f3b110ce1d9.js"
+  "/react_petfinder/precache-manifest.4d723a58af26fa440c31ca30cc145b4e.js"
 );
 
 workbox.clientsClaim();
