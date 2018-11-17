@@ -1,11 +1,13 @@
 {
-  "main.js": "/btholt/complete-intro-to-react-v4/static/js/main.64808231.chunk.js",
-  "main.js.map": "/btholt/complete-intro-to-react-v4/static/js/main.64808231.chunk.js.map",
-  "static/js/1.61548689.chunk.js": "/btholt/complete-intro-to-react-v4/static/js/1.61548689.chunk.js",
-  "static/js/1.61548689.chunk.js.map": "/btholt/complete-intro-to-react-v4/static/js/1.61548689.chunk.js.map",
-  "runtime~main.js": "/btholt/complete-intro-to-react-v4/static/js/runtime~main.8bba194c.js",
-  "runtime~main.js.map": "/btholt/complete-intro-to-react-v4/static/js/runtime~main.8bba194c.js.map",
-  "index.html": "/btholt/complete-intro-to-react-v4/index.html",
-  "precache-manifest.1275b3c171232321299ddaac74381817.js": "/btholt/complete-intro-to-react-v4/precache-manifest.1275b3c171232321299ddaac74381817.js",
-  "service-worker.js": "/btholt/complete-intro-to-react-v4/service-worker.js"
+  "main.css": "/vikasnishal/react_petfinder/static/css/main.fc588afb.chunk.css",
+  "main.js": "/vikasnishal/react_petfinder/static/js/main.7160efa3.chunk.js",
+  "main.js.map": "/vikasnishal/react_petfinder/static/js/main.7160efa3.chunk.js.map",
+  "static/js/1.61548689.chunk.js": "/vikasnishal/react_petfinder/static/js/1.61548689.chunk.js",
+  "static/js/1.61548689.chunk.js.map": "/vikasnishal/react_petfinder/static/js/1.61548689.chunk.js.map",
+  "runtime~main.js": "/vikasnishal/react_petfinder/static/js/runtime~main.ed733756.js",
+  "runtime~main.js.map": "/vikasnishal/react_petfinder/static/js/runtime~main.ed733756.js.map",
+  "static/css/main.fc588afb.chunk.css.map": "/vikasnishal/react_petfinder/static/css/main.fc588afb.chunk.css.map",
+  "index.html": "/vikasnishal/react_petfinder/index.html",
+  "precache-manifest.149ce7ca682085bc56951169430283b3.js": "/vikasnishal/react_petfinder/precache-manifest.149ce7ca682085bc56951169430283b3.js",
+  "service-worker.js": "/vikasnishal/react_petfinder/service-worker.js"
 }

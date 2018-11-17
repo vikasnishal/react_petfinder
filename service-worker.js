@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/btholt/complete-intro-to-react-v4/precache-manifest.1275b3c171232321299ddaac74381817.js"
+  "/vikasnishal/react_petfinder/precache-manifest.149ce7ca682085bc56951169430283b3.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/btholt/complete-intro-to-react-v4/index.html", {
+workbox.routing.registerNavigationRoute("/vikasnishal/react_petfinder/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
