@@ -1,8 +1,9 @@
 {
   "name": "adopt-me",
   "version": "1.0.0",
-  "description": "An app to teach you to write React",
+  "description": "An app to find pets using petfinder",
   "main": "src/App.js",
+  "homepage": "http://vikasnishal.github.io/react_petfinder/",
   "scripts": {
     "test": "",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
@@ -14,16 +15,7 @@
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/btholt/complete-intro-to-react-v4.git"
-  },
-  "author": "Brian Holt <btholt@gmail.com>",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/btholt/complete-intro-to-react-v4/issues"
-  },
-  "homepage": "https://github.com/btholt/complete-intro-to-react-v4#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "9.0.0",
@@ -36,13 +28,22 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
     "parcel-bundler": "^1.10.3",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "gh-pages": "^2.0.1"
   },
   "dependencies": {
     "@reach/router": "^1.1.1",
+    "emotion": "^9.2.12",
     "petfinder-client": "^0.0.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-emotion": "^9.2.12",
     "react-scripts": "^2.1.1"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

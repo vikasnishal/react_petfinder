@@ -25,5 +25,13 @@
     "es6": true,
     "browser": true,
     "node": true
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "16.4.2"
+    },
+    "propWrapperFunctions": ["forbidExtraProps"]
   }
 }
