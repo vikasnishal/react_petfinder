@@ -1,13 +1,13 @@
 {
-  "main.css": "/vikasnishal/react_petfinder/static/css/main.fc588afb.chunk.css",
-  "main.js": "/vikasnishal/react_petfinder/static/js/main.7160efa3.chunk.js",
-  "main.js.map": "/vikasnishal/react_petfinder/static/js/main.7160efa3.chunk.js.map",
-  "static/js/1.61548689.chunk.js": "/vikasnishal/react_petfinder/static/js/1.61548689.chunk.js",
-  "static/js/1.61548689.chunk.js.map": "/vikasnishal/react_petfinder/static/js/1.61548689.chunk.js.map",
-  "runtime~main.js": "/vikasnishal/react_petfinder/static/js/runtime~main.ed733756.js",
-  "runtime~main.js.map": "/vikasnishal/react_petfinder/static/js/runtime~main.ed733756.js.map",
-  "static/css/main.fc588afb.chunk.css.map": "/vikasnishal/react_petfinder/static/css/main.fc588afb.chunk.css.map",
-  "index.html": "/vikasnishal/react_petfinder/index.html",
-  "precache-manifest.149ce7ca682085bc56951169430283b3.js": "/vikasnishal/react_petfinder/precache-manifest.149ce7ca682085bc56951169430283b3.js",
-  "service-worker.js": "/vikasnishal/react_petfinder/service-worker.js"
+  "main.css": "/static/css/main.fc588afb.chunk.css",
+  "main.js": "/static/js/main.9e0ef0ac.chunk.js",
+  "main.js.map": "/static/js/main.9e0ef0ac.chunk.js.map",
+  "static/js/1.61548689.chunk.js": "/static/js/1.61548689.chunk.js",
+  "static/js/1.61548689.chunk.js.map": "/static/js/1.61548689.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/css/main.fc588afb.chunk.css.map": "/static/css/main.fc588afb.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.4b0dd5df65b4857acebab0b19d91a6fc.js": "/precache-manifest.4b0dd5df65b4857acebab0b19d91a6fc.js",
+  "service-worker.js": "/service-worker.js"
 }
