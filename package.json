@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An app to find pets using petfinder",
   "main": "src/App.js",
-  "homepage": "http://vikasnishal.github.io/react_petfinder/",
+  "homepage": "http://vikasnishal.github.io/react_petfinder",
   "scripts": {
     "test": "",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",

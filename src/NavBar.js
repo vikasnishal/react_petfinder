@@ -11,8 +11,8 @@ const Container = styled("header")`
 
 const NavBar = () => (
   <Container>
-    <Link to="/">Adopt Me!</Link>
-    <Link to="/search-params">
+    <Link to={process.env.PUBLIC_URL}>Adopt Me!</Link>
+    <Link to={`${process.env.PUBLIC_URL}/search-params`}>
       <span aria-label="search" role="img">
         🔍
       </span>

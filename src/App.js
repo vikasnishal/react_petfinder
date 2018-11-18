@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Router } from "@reach/router";
 import pf from "petfinder-client";
 import { Provider } from "./SearchContext";
@@ -9,8 +8,8 @@ import SearchParams from "./SearchParams";
 import NavBar from "./NavBar";
 
 const petfinder = pf({
-  key: process.env.API_KEY,
-  secret: process.env.API_SECRET
+  key: process.env.REACT_APP_PETFINDER_API_KEY,
+  secret: process.env.REACT_APP_PETFINDER_API_SECRET
 });
 
 class App extends React.Component {
@@ -75,10 +74,10 @@ class App extends React.Component {
       <div>
         <NavBar />
         <Provider value={this.state}>
-          <Router>
+          <Router basepath={process.env.PUBLIC_URL}>
             <Results path="/" />
-            <Details path="/details/:id" />
-            <SearchParams path="/search-params" />
+            <Details path="details/:id" />
+            <SearchParams path="search-params" />
           </Router>
         </Provider>
       </div>
@@ -86,4 +85,3 @@ class App extends React.Component {
   }
 }
 export default App;
-// ReactDOM.render(<App />, document.getElementById("root"));
