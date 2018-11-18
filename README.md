@@ -5,4 +5,4 @@ the code is pushed to seperate branches to test to different feature sets of rea
 Clone the branch and run "npm install".
 run the command "npm run dev" to start the dev server.
 
-for live demo visit : https://vikasnishal.github.io/react_petfinder/
+For live demo, visit : https://vikasnishal.github.io/react_petfinder/
