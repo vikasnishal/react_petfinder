@@ -7,10 +7,19 @@ import changeBreed from "./actionCreators/changeBreed";
 import getBreeds from "./actionCreators/getBreeds";
 
 class SearchBox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.ref = React.createRef();
+  }
   handleFormSubmit = event => {
     event.preventDefault();
     this.props.search();
+    this.ref.current.focus();
   };
+  componentDidMount() {
+    this.ref.current.focus();
+    this.props.getBreeds();
+  }
   render() {
     return (
       <div className="search-params">
@@ -19,6 +28,7 @@ class SearchBox extends React.Component {
             Location
             <input
               id="location"
+              ref={this.ref}
               onChange={this.props.handleLocationChange}
               value={this.props.location}
               placeholder="Location"
@@ -70,6 +80,9 @@ const mapStateToProps = ({ location, animal, breed, breeds }) => ({
   breeds
 });
 const mapDispatchToProps = dispatch => ({
+  getBreeds() {
+    dispatch(getBreeds());
+  },
   handleAnimalChange(event) {
     dispatch(changeAnimal(event.target.value));
     dispatch(getBreeds());

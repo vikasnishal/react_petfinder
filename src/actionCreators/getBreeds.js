@@ -19,6 +19,10 @@ export default function getBreeds() {
             type: "SET_BREEDS",
             payload: data.petfinder.breeds.breed
           });
+          dispatch({
+            type: "SET_BREED",
+            payload: data.petfinder.breeds.breed[0]
+          });
         } else {
           dispatch({
             type: "SET_BREEDS",
