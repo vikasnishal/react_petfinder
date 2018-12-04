@@ -3,10 +3,13 @@ import { Link } from "@reach/router";
 
 class Pet extends React.Component {
   componentDidMount() {
-    console.log("pet comp");
+    console.log("pet compdidmount called");
   }
   componentWillUnmount() {
     console.log("pet comp unmounted");
+  }
+  componentDidUpdate() {
+    console.log("pet component update is called");
   }
   render() {
     const { name, animal, breed, media, location, id } = this.props;

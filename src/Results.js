@@ -17,9 +17,6 @@ class Results extends React.Component {
       pets: []
     };
   }
-  componentDidMount() {
-    this.search();
-  }
   search = () => {
     petfinder.pet
       .find({

@@ -1,17 +1,9 @@
 import React from "react";
 import { Link } from "@reach/router";
-import styled from "react-emotion";
 import headerLogo from "./adopt-me.png";
 
-const Container = styled("header")`
-  background-color: #333;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-`;
-
 const NavBar = () => (
-  <Container>
+  <div className="container">
     <Link to="/">
       <img src={headerLogo} alt="go to home page" width="100" />
     </Link>
@@ -20,6 +12,6 @@ const NavBar = () => (
         🔍
       </span>
     </Link>
-  </Container>
+  </div>
 );
 export default NavBar;
