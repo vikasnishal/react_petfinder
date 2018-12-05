@@ -5,6 +5,7 @@ import changeAnimal from "./actionCreators/changeAnimal";
 import changeLocation from "./actionCreators/changeLocation";
 import changeBreed from "./actionCreators/changeBreed";
 import getBreeds from "./actionCreators/getBreeds";
+import getPets from "./actionCreators/getPets";
 
 class SearchBox extends React.Component {
   constructor(props) {
@@ -12,18 +13,28 @@ class SearchBox extends React.Component {
     this.ref = React.createRef();
   }
   handleFormSubmit = event => {
+    let { location, animal, breed } = this.props;
     event.preventDefault();
-    this.props.search();
+    this.props.search(location, animal, breed);
     this.ref.current.focus();
   };
   componentDidMount() {
     this.ref.current.focus();
     this.props.getBreeds();
   }
+  componentDidUpdate(prevProps, prevState) {
+    console.log("searchbox comp update before data");
+
+    console.log(prevProps);
+    console.log(prevState);
+    console.log("searchbox comp update after data");
+    console.log(this.props);
+    console.log(this.state);
+  }
   render() {
     return (
       <div className="search-params">
-        <form onSubmit={this.handleFormSubmit}>
+        <form onSubmit={this.props.getPets}>
           <label htmlFor="location">
             Location
             <input
@@ -80,6 +91,10 @@ const mapStateToProps = ({ location, animal, breed, breeds }) => ({
   breeds
 });
 const mapDispatchToProps = dispatch => ({
+  getPets(event) {
+    event.preventDefault();
+    dispatch(getPets());
+  },
   getBreeds() {
     dispatch(getBreeds());
   },

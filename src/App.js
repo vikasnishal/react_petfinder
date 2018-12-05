@@ -30,6 +30,12 @@ const LoadableResults = Loadable({
   }
 });
 class App extends React.Component {
+  componentDidMount() {
+    console.log("app component mounted");
+  }
+  componentDidUpdate() {
+    console.log("app component updated");
+  }
   render() {
     return (
       <div>
