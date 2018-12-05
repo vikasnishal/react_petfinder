@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/vikasnishal/react_petfinder/precache-manifest.4c26342213f72531c43ec99c80992fa3.js"
+  "/react_petfinder/precache-manifest.37e07ddd37fe4617102e8612b200939c.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/vikasnishal/react_petfinder/index.html", {
+workbox.routing.registerNavigationRoute("/react_petfinder/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
