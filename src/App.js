@@ -8,23 +8,23 @@ import { Provider } from "react-redux";
 // import Details from "./Details";
 // import SearchParams from "./SearchParams";
 // import Results from "./Results";
-import NavBar from "./NavBar";
+import NavBar from "./components/NavBar";
 
 const LoadableDetails = Loadable({
-  loader: () => import("./Details"),
+  loader: () => import("./components/Details"),
   loading() {
     return <div>Loading split code</div>;
   }
 });
 
 const LoadableSearchParams = Loadable({
-  loader: () => import("./SearchParams"),
+  loader: () => import("./components/SearchParams"),
   loading() {
     return <div>Loading split code</div>;
   }
 });
 const LoadableResults = Loadable({
-  loader: () => import("./Results"),
+  loader: () => import("./components/Results"),
   loading() {
     return <div>Loading split code</div>;
   }
@@ -51,5 +51,5 @@ class App extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<App />, document.getElementById("root"));
+export default App;
+// ReactDOM.render(<App />, document.getElementById("root"));

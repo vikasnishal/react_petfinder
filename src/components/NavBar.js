@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "@reach/router";
-import headerLogo from "./adopt-me.png";
+import headerLogo from "../adopt-me.png";
 
 class NavBar extends React.Component {
   componentDidMount() {
