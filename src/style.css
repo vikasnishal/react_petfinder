@@ -188,3 +188,10 @@ header {
   display: inline-block;
   margin-right: 15px;
 }
+
+header.container {
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}

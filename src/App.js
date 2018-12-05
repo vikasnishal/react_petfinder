@@ -71,13 +71,13 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="container">
         <NavBar />
         <Provider value={this.state}>
-          <Router basepath={process.env.PUBLIC_URL}>
+          <Router>
             <Results path="/" />
-            <Details path="details/:id" />
-            <SearchParams path="search-params" />
+            <Details path="/details/:id" />
+            <SearchParams path="/search-params" />
           </Router>
         </Provider>
       </div>
