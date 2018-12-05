@@ -3,7 +3,7 @@ import { Link } from "@reach/router";
 
 class Pet extends React.Component {
   componentDidMount() {
-    // console.log("pet compdidmount called");
+    console.log("pet compdidmount called");
   }
   componentWillUnmount() {
     console.log("pet comp unmounted");
