@@ -11,4 +11,4 @@ module.exports=function(n){return new Promise(function(e,o){var r=document.creat
 },{}],0:[function(require,module,exports) {
 var b=require("21/1");b.register("js",require("Yi9z"));
 },{}]},{},[0,"XGSj"], null)
-//# sourceMappingURL=react_petfinder/Details.9780d3b4.map
+//# sourceMappingURL=/Details.9780d3b4.map
