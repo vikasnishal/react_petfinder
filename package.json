@@ -8,7 +8,8 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url /react_petfinder",
+    "deploy": "npm run build && gh-pages -d dist "
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   "author": "vikas kumar",
   "license": "Apache-2.0",
   "bugs": {},
-  "homepage": "https://github.com/vikasnishal/react_petfinder#readme",
+  "homepage": "https://github.com/vikasnishal/react_petfinder/",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^9.0.0",
@@ -30,7 +31,8 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
     "parcel-bundler": "^1.9.7",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "gh-pages": "^2.0.1"
   },
   "dependencies": {
     "@reach/router": "^1.1.1",
