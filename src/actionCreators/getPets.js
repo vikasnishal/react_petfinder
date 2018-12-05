@@ -1,8 +1,8 @@
 import pf from "petfinder-client";
 
 const petfinder = pf({
-  key: process.env.API_KEY,
-  secret: process.env.API_SECRET
+  key: process.env.REACT_APP_PETFINDER_API_KEY,
+  secret: process.env.REACT_APP_PETFINDER_API_SECRET
 });
 
 export default function getPets() {
