@@ -41,10 +41,10 @@ class App extends React.Component {
       <div>
         <NavBar />
         <Provider store={store}>
-          <Router>
+          <Router basepath={process.env.REACT_APP_PUBLIC_URL}>
             <LoadableResults path="/" />
-            <LoadableDetails path="/details/:id" />
-            <LoadableSearchParams path="/search-params" />
+            <LoadableDetails path="details/:id" />
+            <LoadableSearchParams path="search-params" />
           </Router>
         </Provider>
       </div>
@@ -52,4 +52,4 @@ class App extends React.Component {
   }
 }
 export default App;
-// ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

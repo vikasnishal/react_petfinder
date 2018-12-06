@@ -15,10 +15,10 @@ class NavBar extends React.Component {
   render() {
     return (
       <header className="container">
-        <Link to="/">
+        <Link to={process.env.REACT_APP_PUBLIC_URL}>
           <img src={headerLogo} alt="go to home page" width="100" />
         </Link>
-        <Link to="/search-params">
+        <Link to={`${process.env.REACT_APP_PUBLIC_URL}/search-params`}>
           <span aria-label="search" role="img">
             🔍
           </span>

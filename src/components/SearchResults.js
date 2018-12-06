@@ -6,6 +6,9 @@ class SearchResults extends React.Component {
   constructor(props) {
     super(props);
   }
+  componentDidUpdate(prevProps) {
+    console.dir(prevProps);
+  }
   render() {
     return (
       <div>

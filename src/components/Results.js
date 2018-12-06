@@ -12,7 +12,7 @@ class Results extends React.Component {
   }
   componentDidUpdate(prevProps, prevState) {
     console.log("results comp update before data");
-    console.log(prevProps);
+    console.dir(prevProps);
     console.log(prevState);
     console.log("results comp update after data");
     console.log(this.props);
