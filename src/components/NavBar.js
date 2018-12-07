@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "@reach/router";
-import headerLogo from "../adopt-me.png";
+// import headerLogo from "../adopt-me.png";
 
 class NavBar extends React.Component {
   componentDidMount() {
@@ -16,7 +16,8 @@ class NavBar extends React.Component {
     return (
       <header className="container">
         <Link to={process.env.REACT_APP_PUBLIC_URL}>
-          <img src={headerLogo} alt="go to home page" width="100" />
+          Adopt Me!
+          {/* <img src={headerLogo} alt="go to home page" width="100" /> */}
         </Link>
         <Link to={`${process.env.REACT_APP_PUBLIC_URL}/search-params`}>
           <span aria-label="search" role="img">
