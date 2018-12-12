@@ -9,6 +9,9 @@ class SearchResults extends React.Component {
   componentDidUpdate(prevProps) {
     console.dir(prevProps);
   }
+  componentDidMount() {
+    console.dir(Pet);
+  }
   render() {
     return (
       <div>

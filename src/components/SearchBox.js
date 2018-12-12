@@ -21,6 +21,7 @@ class SearchBox extends React.Component {
   componentDidMount() {
     this.ref.current.focus();
     this.props.getBreeds();
+    console.log(this.props.children);
   }
   componentDidUpdate(prevProps, prevState) {
     console.log("searchbox comp update before data");
@@ -32,7 +33,7 @@ class SearchBox extends React.Component {
     console.log(this.state);
   }
   render() {
-    return (
+    var template = (
       <div className="search-params">
         <form onSubmit={this.props.getPets}>
           <label htmlFor="location">
@@ -82,6 +83,8 @@ class SearchBox extends React.Component {
         </form>
       </div>
     );
+    console.log(template);
+    return template;
   }
 }
 const mapStateToProps = ({ location, animal, breed, breeds }) => ({
