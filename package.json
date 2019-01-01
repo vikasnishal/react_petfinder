@@ -11,6 +11,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
