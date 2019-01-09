@@ -5,6 +5,7 @@ import { ServerLocation } from "@reach/router";
 import fs from "fs";
 import App from "./src/App";
 import dotenv from "dotenv";
+import Loadable from "react-loadable";
 
 dotenv.config().parsed;
 
@@ -29,4 +30,8 @@ app.use((req, res) => {
   res.end();
 });
 console.log(`listening on port ${PORT}`);
-app.listen(PORT);
+Loadable.preloadAll().then(() => {
+  app.listen(PORT, () => {
+    console.log("Running on http://localhost:3000/");
+  });
+});
